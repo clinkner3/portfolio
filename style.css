@@ -1,0 +1,278 @@
+body, html {
+    margin: 0 auto;
+    padding: 0 auto;
+    line-height: 1.35;
+}
+
+.split h1 {
+    color: orange;
+    font-family: Montserrat;
+    font-weight: bold; 
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+h1 {
+    color: orange;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.hero h2, .hero-work h2 {
+    font-family: Montserrat;
+    font-weight: 200;
+    color: black;
+    font-size: 25;
+}
+
+h2 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: orange; 
+    color: black;
+    text-decoration-thickness: 2px;
+}
+
+footer {
+    text-align: center;
+    margin: 50px;
+    opacity: 0.5;
+}
+
+/* NAVIGATION */
+
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 0 auto;
+    position: fixed;
+    width: 100%;
+    box-sizing:border-box;
+    padding: 8px 40px;
+    
+  }
+
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Montserrat;
+  }
+
+.topnav a:hover {
+    color: orange;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    font-weight: 600;
+  }
+  
+  .topnav a.split {
+    float: left;
+
+  }
+
+  /* NAVIGATION ENDS  */
+
+  /* OPEN HERO */
+
+.hero {
+    position: relative;
+    padding: 250px;
+    text-align: center;
+    background-image: url(images/blur-circle.png);
+    background-repeat: no-repeat;
+    background-position: right 35% bottom 50%;
+    background-size: 25%;
+    height: 300px;
+}
+
+
+.hero-work {
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    background-color: #fff8ea;
+    background-image: url(images/mv-hero.png);
+    background-size: auto, auto;
+    background-position: top, center;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+.hero-work-eh {
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    background-color: #fff8ea;
+    background-image: url(images/eh-hero.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+.hero-work-intern {
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    background-color: #fff8ea;
+    background-image: url(images/internship-hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+
+.about {
+    text-align: left;
+    position: relative;
+    padding: 250px;
+    background-image: url(images/blur-circle.png);
+    background-repeat: no-repeat;
+    background-position: right 35% bottom 50%;
+    background-size: 25%;
+    height: 300px;
+    line-height: 1.2em;
+} 
+
+.about p {
+    width: 50%;
+}
+
+/* HERO ENDS */
+
+#work {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20%;
+
+}
+
+.project {
+    width: 330px;
+    height: auto;
+    flex: 1 0 100%;
+    position: relative; 
+    margin: 20px;
+
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    font-family: Montserrat;
+    font-size: 2em;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .project:hover .overlay {
+    opacity: .8; 
+}
+
+
+
+.project img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+
+
+/* PAGE LAYOUT  */
+
+.container {
+    margin: 0 20%;
+    box-sizing: border-box;
+    line-height: 1.6em;
+}
+
+.container h3{
+    font-weight: 800;
+    padding: 30px 0 0 0;
+    line-height: 1.6em;
+}
+
+.info-container {
+    display: flex; 
+
+}
+
+.info {
+    width: 50%;
+    padding: 20px 0px;
+    
+}
+
+.timeline {
+    width: 100%;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    float: right;
+    align-items: center;
+}
+
+.video { 
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.learn-more h2 {
+    text-align: center;
+    padding: 50px;
+    font-weight: 100;
+}
+
+.media-gallery {
+    display: inline-flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+img.media {
+    width: 40%;
+    height: auto;
+    padding: 50px 20px;
+}
+
